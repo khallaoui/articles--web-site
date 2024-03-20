@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Aide-Mémoire</title>
+
+    <style>
+        /* Your existing styles */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Light Gray Background */
+            transition: background-color 0.5s ease; /* Smooth Background Color Transition */
+        }
+
+        nav {
+            background-color: #0055A4;
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow Below Navigation */
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 12px; /* Add padding for better touch interaction */
+            border-radius: 5px; /* Add border-radius for a subtle rounded look */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth Transition */
+        }
+
+        nav a:hover {
+            background-color: #00274D; /* Darker Blue on Hover */
+            color: #ffcc00; /* Yellow on Hover */
+        }
+
+        .social-icons {
+            font-size: 20px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #FFFFFF;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth Text Color Transition */
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00; /* Yellow on Hover */
+        }
+
+        .logo {
+            max-width: 100px;
+        }
+
+        header {
+            background-color: #333; /* Dark Gray Header Background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 70px; /* Adjusted Margin to Avoid Overlapping with Navigation */
+        }
+
+        main {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .heading-middle {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue Color for Heading */
+        }
+
+        .horizontal-group {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .article {
+            flex: 1;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin: 0 10px 20px;
+            padding: 20px;
+            transition: transform 0.3s ease; /* Smooth Transform Transition */
+        }
+
+        .article:hover {
+            transform: translateY(-5px); /* Move Upward on Hover */
+        }
+
+        .article h2 {
+            color: #007bff;
+        }
+
+        .article p {
+            color: #555; /* Dark Gray Text Color */
+            margin-bottom: 10px; /* Added margin to separate paragraphs */
+        }
+
+        .article img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .group-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="image\your-logo.png" alt="Your Logo" class="logo">
+        <div>
+            <a href="#">ACCUEIL</a>
+            <a href="#">ACTIONS</a>
+            <a href="#">ARTICLES</a>
+            <a href="#">DESINTOX</a>
+            <a href="#">POURQUOI NOUS ?</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 style="color: #ffcc00;"> Aide-Mémoire</h1>
+    </header>
+
+    <main>
+        <!-- Group 1 - Horizontal -->
+        <div class="horizontal-group">
+            <div class="article" id="casablanca">
+                <a href="casablanca.html">
+                    <img src="image\casa.jpg" alt="Casablanca Image">
+                    <h2>Casablanca - The Economic Hub</h2>
+                    <p>Casablanca is Morocco's economic hub, known for its modern architecture, bustling markets, and vibrant nightlife. The city is a melting pot of cultures, offering a unique blend of tradition and modernity. The iconic Hassan II Mosque, located on the oceanfront, is a major landmark. The Corniche waterfront offers a scenic escape, and the vibrant Central Market provides a taste of local life and cuisine.</p>
+                </a>
+            </div>
+
+            <div class="article" id="marrakech">
+                <a href="marrakech.html">
+                    <img src="image\mar.jpg" alt="Marrakech Image">
+                    <h2>Marrakech - The Red City</h2>
+                    <p>Marrakech, with its red walls and historic medina, is a cultural treasure. Explore its lively souks and iconic landmarks. The city's palaces, gardens, and vibrant street life make it a must-visit destination for travelers seeking an authentic Moroccan experience. Visit Jemaa el-Fnaa square, Bahia Palace, Majorelle Garden, and the Koutoubia Mosque. The medina is a UNESCO World Heritage site.</p>
+                </a>
+            </div>
+
+            <div class="article" id="fez">
+                <a href="fez.html">
+                    <img src="image\fes.jpg" alt="Fez Image">
+                    <h2>Fez - The Medieval City</h2>
+                    <p>Fez, with its UNESCO-listed Medina, is a journey back in time. Discover ancient architecture, vibrant markets, and traditional crafts. The city's labyrinthine streets and historic landmarks offer a glimpse into Morocco's rich cultural heritage. Fes is famous for the University of Al Quaraouiyine, considered the oldest continuously operating educational institution globally. The Bou Inania Madrasa stands as a masterpiece of Islamic architecture. The tanneries in Fes el Bali showcase traditional craftsmanship, offering a sensory-rich experience.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Group 2 - Horizontal -->
+        <div class="horizontal-group">
+            <div class="article">
+                <img src="image\aga.jpg" alt="Agadir Image">
+                <h2>Agadir - Modern Beach Resort</h2>
+                <p>Agadir is a modern beach resort city located along Morocco's southern Atlantic coast. It offers a blend of modern amenities, sandy beaches, and a vibrant nightlife. Agadir's long sandy beach is a highlight, attracting sun-seekers and water sports enthusiasts. The Kasbah, perched on a hill, provides breathtaking views of the city and ocean. Beyond the beaches, Agadir serves as a gateway to the nearby Atlas Mountains, offering opportunities for exploration and adventure.</p>
+            </div>
+
+            <div class="article">
+                <img src="image\ess.jpg" alt="Essaouira Image">
+                <h2>Essaouira - Coastal Charm</h2>
+                <p>Essaouira, formerly known as Mogador, is a coastal city known for its well-preserved historic medina, vibrant blue-and-white buildings, and artistic atmosphere. Essaouira's sandy beaches are a major draw, offering a perfect blend of relaxation and water activities. The lively souks (markets) showcase local crafts, including intricately designed carpets and traditional woodwork. The Skala de la Ville fortress provides panoramic views of the city, while the picturesque fishing port captures the essence of Essaouira's maritime life.</p>
+            </div>
+
+            <div class="article">
+                <img src="image\mek.jpg" alt="Meknes Image">
+                <h2>Meknes - Imperial City</h2>
+                <p>Meknes, a former imperial city, is characterized by its well-preserved historic architecture and grand gateways. It's known for its imperial past and cultural heritage. Notable attractions in Meknes include Bab Mansour, an impressive city gate, the Royal Stables, and the historic medina. Meknes provides a glimpse into Morocco's imperial history without the crowds found in some other cities.</p>
+            </div>
+        </div>
+
+        <!-- Group 3 - Horizontal -->
+        <div class="horizontal-group">
+            <div class="article">
+                <img src="image\xaf.jpg" alt="Chefchaouen Image">
+                <h2>Chefchaouen - The Blue Pearl</h2>
+                <p>Chefchaouen, the "Blue Pearl," is known for its blue-washed buildings nestled in the Rif Mountains. It offers a serene and picturesque setting. Exploring Chefchaouen involves wandering through the narrow blue streets, visiting the Kasbah, and enjoying stunning mountain views. The city is a haven for photographers seeking a tranquil and visually striking environment.</p>
+            </div>
+
+            <div class="article">
+                <img src="image\mar.jpg" alt="Marrakech Image">
+                <h2>Marrakech - Cultural Gem</h2>
+                <p>Marrakech, the "Red City," is a cultural and historical gem known for its vibrant souks, palaces, and gardens. It's a hub of art, music, and traditional craftsmanship. Visit Jemaa el-Fnaa square, Bahia Palace, Majorelle Garden, and the Koutoubia Mosque. The medina is a UNESCO World Heritage site.</p>
+            </div>
+
+            <div class="article">
+                <img src="image\sale.jpg" alt="Salé Image">
+                <h2>Salé - Riverside Charm</h2>
+                <p>Salé is located on the opposite bank of the Bou Regreg River from Rabat. It has a rich history and offers a more relaxed atmosphere compared to its neighbor. Exploring Salé involves strolling through the historic Salé Medina, visiting the Grand Mosque, and enjoying a leisurely walk along the riverfront. Salé is known for its well-preserved historic monuments.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="display-script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Article Publishing Site</title>
+</head>
+<body>
+    <nav>
+        <img src="image\logo2.jpg" alt="Your Logo" class="logo">
+        <div>
+            <a href="index.html">ACCUEIL</a>
+            <a href="Action.html">Nos actions citoyennes</a>
+            <a href="petition.html">Nos pétitions</a>
+            <a href="#">Aide-Mémoire</a>
+            <a href="#">POURQUOI NOUS ?</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="Publier-form">
+            <h2>Publier un nouvel article</h2>
+            <form id="articleForm">
+                <label for="title">Titre:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Contenu:</label>
+                <textarea id="content" name="content" required oninput="autoResize(this)"></textarea>
+
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" onchange="displayImage(event)">
+
+                <!-- Add an <img> element to display the selected image -->
+                <img id="selectedImage" src="#" alt="Selected Image" style="display: none; max-width: 100%; margin-top: 10px;">
+
+                <button type="button" onclick="publishArticle()">Publier l'article</button>
+            </form>
+        </div>
+    </main>    
+    
+    <script>
+        function displayImage(event) {
+            const selectedImage = document.getElementById('selectedImage');
+            const file = event.target.files[0];
+            
+            // Check if a file is selected
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    selectedImage.src = e.target.result;
+                    selectedImage.style.display = 'block'; // Show the image
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Function to auto resize textarea
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+    
+        function publishArticle() {
+            // Add your publishArticle function logic here
+        }
+    </script>
+    
+</body>
+</html>

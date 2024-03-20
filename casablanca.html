@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Add your stylesheets -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 20px; /* Added margin for spacing */
+        }
+
+        .article {
+            max-width: 800px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: left;
+            margin-right: 20px; /* Added margin to separate the form */
+        }
+
+        .article img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .article h2 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .article p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            flex: 1;
+            max-width: 400px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>Casablanca - The Economic Hub</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Casablanca</h1>
+    </header>
+
+    <main>
+        <div class="article">
+            <img src="image\casa.jpg" alt="Casablanca Image">
+            <h2>Casablanca - The Economic Hub</h2>
+            <p>Casablanca, the largest city in Morocco, stands as a dynamic metropolis on the country's Atlantic coast. Often referred to as the economic heart of Morocco, Casablanca is a melting pot of cultures, a city where tradition and modernity seamlessly coexist. With its modern architecture, bustling markets, and vibrant nightlife, Casablanca offers a unique and unforgettable experience to locals and visitors alike.</p>
+            <p>Modern Marvels:</p>
+            <p>Casablanca is renowned for its impressive modern architecture that dominates the cityscape. One iconic landmark is the Hassan II Mosque, situated on the oceanfront...</p>
+            <!-- Add more content as needed -->
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Je signe</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- Add your scripts -->
+
+</body>
+
+</html>
